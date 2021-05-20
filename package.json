@@ -4,9 +4,7 @@
   "description": "backup server that starts app in case main server goes down",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js my-app",
-    "stop": "kilall -SIGINT my-app"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC"
