@@ -2,7 +2,7 @@ const cp = require('child_process');
 const https = require('https');
 
 const delay = 3 * 60 * 100;
-const endpointUrl = 'https://discord-megumin-bot-ai.herokuapp.com/'
+const endpointUrl = 'https://exampleendpointurl.com/'
 
 
 const main = async () => {
@@ -24,14 +24,14 @@ const onStatusCode = (code) => {
     console.log(code);
     //succes
     if(code > 199 && code < 300){   //200 - 299
-        console.log('nice');
+        console.log('ok');
         turnOffApp();
         return;
     }
     //server down
     if((code > 499 && code < 600) // server error or not found
      || code == 404){
-        console.log('bad');
+        console.log('not running');
         turnOnApp();
     }
 }
